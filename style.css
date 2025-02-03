@@ -18,10 +18,11 @@ body{
 .container{
     background-color: brown;
     width: 400px;
-    height: 500px;
+    height: 550px;
     padding: 18px;
     border-radius: 20px;
     position: relative;
+    color: white;
 }
 
 .search_box{
@@ -30,5 +31,83 @@ body{
     align-items: center;
     position: relative;
     display: flex;
-    background-color: lightcoral;
+}
+
+.search_box input {
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    color: white;
+    border: 2px solid rgba(255,255,255,.2);
+    font-size: 20px;
+    padding: 0 48px 0 43px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: 400;
+}
+
+.search_box i{
+    position: absolute;
+    left: 10px;
+    font-size: 27px;
+}
+
+.search_box input::placeholder{
+    color: white;
+    text-transform:capitalize;
+}
+
+.search_box button{
+    position:absolute;
+    right:0;
+    width: 45px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 27px;
+    padding: 0 40px 0 5px;
+    cursor: pointer;
+}
+
+.weather-box{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.weather-box img{
+    width: 60%;
+}
+
+.weather-box .temperature{
+    position: relative;
+    font-size: 54px;
+    line-height: 1;
+    font-weight: 600;
+    margin: 20px 0 6px -30px;
+
+}
+
+.weather-box .temperature span{
+    position: absolute;
+    font-size: 25px;
+    margin: 4px;
+}
+
+.weather-box .description{
+    font-size: 23px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.weather-details{
+    position: absolute;
+    bottom: 40px;
+    left:0;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
 }
