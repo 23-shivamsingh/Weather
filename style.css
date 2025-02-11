@@ -22,11 +22,12 @@ body{
     backdrop-filter: blur(25px);
     border: 2px solid rgba(255,255,255, .2) ;
     width: 400px;
-    height: 550px;
+    height: 100px;
     padding: 18px;
     border-radius: 20px;
     position: relative;
     color: white;
+    transition: height .6s ease;
 }
 
 .search_box{
@@ -107,6 +108,30 @@ body{
     text-transform: capitalize;
 }
 
+.weather-box,
+.weather-details, 
+.not-found{
+    visibility: hidden;
+}
+
+.weather-box.active,
+.weather-details.active, 
+.not-found.active{
+    visibility: visible;
+}
+
+.weather-box .box,
+.not-found .box{
+    transform: translateY(-100%); 
+}
+
+.weather-box.active .box,
+.not-found.active .box{
+    transform: translateY(0%); 
+    transition: transform 1s ease;
+    transition-delay: .6s;
+}
+
 .weather-details{
     position: absolute;
     bottom: 40px;
@@ -117,7 +142,7 @@ body{
 }
 
 .weather-details .humidity,
-.weather-details .wind {
+.weather-details .wind{
     display: flex;
     align-items: center;
     width: 50%;
@@ -147,4 +172,23 @@ body{
 .weather-details p{
     font-size: 15px;
     font-weight: 500;
+}
+
+.not-found img {
+    width: 60%;
+}
+
+.not-found {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 110px;
+}
+
+.not-found p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 12px;
 }
