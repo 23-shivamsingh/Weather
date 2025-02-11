@@ -146,6 +146,14 @@ body{
     display: flex;
     align-items: center;
     width: 50%;
+    transform: translateY(-100%);
+}
+
+.weather-details.active .humidity,
+.weather-details.active .wind{
+    transform: translateY(0%);
+    transition: transform 1s ease;
+    transition-delay: 1.3s;
 }
 
 .weather-details .humidity{
