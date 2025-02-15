@@ -6,28 +6,15 @@ const error404 = document.querySelector(".not-found");
 
 
 search.addEventListener("click",() => {
-    const APIkey = "14ec962d54dd4b9c83b170509250502";
-    const city = document.querySelector(".search_box input").ariaValueMax;
+    const APIkey = "67339a88d309dac934c8fc317e85f1d3";
+    const city = document.querySelector(".search_box input").value;
 
     if (city == "")
         return;
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIkey}`).then(response => response.json().then(json => { 
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIkey}`).then(response => response.json()).then(json => { 
 
-        if (json.cod == '404') {
-            container.style.height = '400px';
-            weatherBox.classList.remove('active');
-            weatherDetails.classList.remove('active');
-            error404.classList.add('active');
-            return;
-        }
-
-        container.style.height = '555px';
-        weatherBox.classList.add('active');
-        weatherDetails.classList.add('active');
-        error404.classList.remove('active');
-        return;
-
+       
         const image = document.querySelector(".weather-box img");
         const temperature = document.querySelector(".weather-box .temperature");
         const description = document.querySelector(".weather-box .description");
@@ -66,5 +53,21 @@ search.addEventListener("click",() => {
         description.innerHTML = `${json.weather[0].description}`;
         humidity.innerHTML = `${json.main.humidity}%`;
         wind.innerHTML = `${parseInt(json.wind.speed)}km/h`;
-    }));
+    });
 });
+
+
+    
+// if (json.cod == '404') {
+//     container.style.height = '400px';
+//     weatherBox.classList.remove('active');
+//     weatherDetails.classList.remove('active');
+//     error404.classList.add('active');
+//     return;
+// }
+
+// container.style.height = '555px';
+// weatherBox.classList.add('active');
+// weatherDetails.classList.add('active');
+// error404.classList.remove('active');
+// return;
