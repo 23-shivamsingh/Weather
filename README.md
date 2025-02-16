@@ -14,5 +14,6 @@ CSS for styling 🎨
 🔗 Check out the project on GitHub & feel free to contribute! 🤩
 
 👉 [[GitHub Repo Link] : - (https://github.com/23-shivamsingh/Weather.git) ]
+🔗 Check it out here: [(https://23-shivamsingh.github.io/Weather/) ]
 
 #WeatherApp #JavaScript #WebDevelopment #OpenWeatherMap #GitHub
