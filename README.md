@@ -13,6 +13,6 @@ JavaScript (Fetch API) 🚀
 CSS for styling 🎨
 🔗 Check out the project on GitHub & feel free to contribute! 🤩
 
-👉 [GitHub Repo Link] (Add your repo link here)
+👉 [[GitHub Repo Link] : - (https://github.com/23-shivamsingh/Weather.git) ]
 
 #WeatherApp #JavaScript #WebDevelopment #OpenWeatherMap #GitHub
