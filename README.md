@@ -7,7 +7,6 @@ I just built a Weather App using HTML, CSS, and JavaScript! 🌦☀️❄️
 ✅ Displays temperature, humidity, wind speed & weather conditions 💨🌡
 ✅ Dynamic weather icons based on conditions (Rain, Snow, Mist, etc.) 🌧️☀️
 📌 Tech Used:
-
 OpenWeatherMap API 🌐
 JavaScript (Fetch API) 🚀
 CSS for styling 🎨
